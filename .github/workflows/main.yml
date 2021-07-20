@@ -25,9 +25,6 @@ jobs:
           plugin_traffic: yes
           # Follow-up
           plugin_followup: yes
-          # Isometric calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
           # Languages
           plugin_languages: yes
           plugin_languages_ignored: "" # List of comma separated languages to ignore
@@ -49,10 +46,13 @@ jobs:
         with:
           filename: metrics-right.svg
           # Your GitHub token
-          token: NOT_NEEDED
+          token: ${{ secrets.README }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
+          # Isometric calendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           # Habits
           plugin_habits: yes
           plugin_habits_from: 400
