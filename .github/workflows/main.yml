@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # See action.yml for all options
-      - uses: lowlighter/metrics@latest
+      - name: 🦑 Personal metrics (left)
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics-left.svg
           # Your GitHub token
           token: ${{ secrets.README }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -40,6 +43,17 @@ jobs:
           plugin_projects: yes
           plugin_projects_limit: 5
           plugin_projects_descriptions: yes
+
+      - name: 🦑 Personal metrics (right)
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-right.svg
+          # Your GitHub token
+          token: ${{ secrets.README }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
           # Habits
           plugin_habits: yes
           plugin_habits_from: 400
@@ -51,29 +65,7 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: mastered
           plugin_topics_limit: 15
-          # WakaTime
-          plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_days: 7
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_limit: 4
           # GitHub Skyline
           plugin_skyline: yes
           plugin_skyline_year: 2021    # Set to 0 to display current year
           plugin_skyline_frames: 60     # Use 60 frames (half-loop)
-
-      - name: 🦑 Personal metrics (left)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.svg
-          # Your GitHub token
-          token: ${{ secrets.README }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-
-          # Lines
-          plugin_lines: yes
-          # Traffic
-          plugin_traffic: yes
-
