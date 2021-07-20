@@ -28,7 +28,7 @@ jobs:
           plugin_followup: yes
           # Isometric calendar
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
           # Languages
           plugin_languages: yes
           plugin_languages_ignored: "" # List of comma separated languages to ignore
@@ -36,7 +36,7 @@ jobs:
           # PageSpeed
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
-          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_screenshot: no
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://ormissia.github.io
           # Projects
@@ -44,13 +44,15 @@ jobs:
           plugin_projects_limit: 5
           plugin_projects_descriptions: yes
 
+          config_order: lines, traffic, followup, isocalendar, projects, pagespeed
+
       - name: 🦑 Personal metrics (right)
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metrics-right.svg
           # Your GitHub token
-          token: ${{ secrets.README }}
+          token: NOT_NEEDED
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -65,7 +67,5 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: mastered
           plugin_topics_limit: 15
-          # GitHub Skyline
-          plugin_skyline: yes
-          plugin_skyline_year: 2021    # Set to 0 to display current year
-          plugin_skyline_frames: 60     # Use 60 frames (half-loop)
+
+          config_order: habits, topics, skyline
