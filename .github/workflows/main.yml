@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 🦑 Personal metrics (left)
+      - name: 🦑 Personal metrics
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics-left.svg
+          filename: metrics.svg
           token: ${{ secrets.README }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -49,24 +49,3 @@ jobs:
           plugin_projects: yes
           plugin_projects_limit: 5
           plugin_projects_descriptions: yes
-
-      - name: 🦑 Personal metrics (right)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics-right.svg
-          # Your GitHub token
-          token: NOT_NEEDED
-          # GITHUB_TOKEN is a special auto-generated token used for commits
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-
-          # Topics
-          plugin_topics: yes
-          plugin_topics_mode: mastered
-          plugin_topics_limit: 15
-          # PageSpeed
-          plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_screenshot: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: https://ormissia.github.io

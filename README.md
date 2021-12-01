@@ -4,11 +4,11 @@
 
 ---
 
-### Skills And Tools
+## Skills And Tools
 
 <img align="right" width="300" alt="🦑" src="https://count.getloli.com/get/@ormissia?theme=gelbooru">
 
-- #### Language
+- ### Language
 
 <p>
 <img height="64" width="64" alt="go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
@@ -17,7 +17,7 @@
 <img height="64" width="64" alt="bash" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
 </p>
 
-- #### Tools
+- ### Tools
 
 <p>
 <img height="64" width="64" alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
@@ -28,7 +28,7 @@
 <img height="64" width="64" alt="jetbrains" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
 </p>
 
-- #### Storage/DB/Middleware
+- ### Storage/DB/Middleware
 
 <p>
 <img height="64" width="64" alt="mysql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
@@ -39,14 +39,14 @@
 <img height="64" width="64" alt="hadoop" src="icons/hadoop.svg" />
 </p>
 
-- #### Framework
+- ### Framework
 
 <p>
 <img height="64" width="64" alt="hadoop" src="icons/flink.svg" />
 <img height="64" width="64" alt="spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
 </p>
 
-- #### System/Program
+- ### System/Program
 
 <p>
 <img height="64" width="64" alt="linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
@@ -62,6 +62,8 @@
 
 ---
 
-<img width="90%" alt="🦑" src="https://github.com/ormissia/ormissia/blob/master/metrics-left.svg">
-<img width="90%" alt="🦑" src="https://github.com/ormissia/ormissia/blob/master/metrics-right.svg">
+## My Profile
 
+<details>
+<img width="90%" alt="🦑" src="https://github.com/ormissia/ormissia/blob/master/metrics.svg">
+</details>
