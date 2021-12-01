@@ -28,7 +28,7 @@
 <img height="64" width="64" alt="jetbrains" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
 </p>
 
-- #### Storage
+- #### Storage/DB/Middleware
 
 <p>
 <img height="64" width="64" alt="mysql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
@@ -46,7 +46,7 @@
 <img height="64" width="64" alt="spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
 </p>
 
-- #### tools
+- #### System/Program
 
 <p>
 <img height="64" width="64" alt="linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
