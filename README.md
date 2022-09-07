@@ -4,6 +4,8 @@
 
 ---
 
+<img width="100%" alt="snake" src="https://raw.githubusercontent.com/ormissia/ormissia/master/profile-3d-contrib/profile-season.svg">
+
 <img width="100%" alt="snake" src="https://raw.githubusercontent.com/ormissia/ormissia/snake/github-contribution-grid-snake.svg">
 
 ---
